@@ -1,4 +1,4 @@
-import profileImage from "../assets/amritesh.png";
+import profileImage from "../assets/amritesh.jpg";
 import resumeFile from "../assets/Amritesh_cv (1).pdf";
 
 export const portfolioData = {
@@ -121,7 +121,7 @@ export const projects = [
     category: "ML + Analytics Project",
     period: "Mar 2025 - Apr 2025",
     href: "https://github.com/AmriteshJangir",
-    image: "/assets/projects/road-accident-severity.png",
+    image: "/assets/projects/road-accident.jpg",
     description:
       "A classification workflow for predicting accident severity using historical crash data and interactive outputs.",
     bullets: [
