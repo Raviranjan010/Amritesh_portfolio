@@ -6,9 +6,9 @@ export const portfolioData = {
   firstName: "Amritesh",
   role: "Data Analyst & Full-Stack Developer",
   tagline:
-    "I build practical web products and data-driven tools that turn raw information into usable decisions.",
+    "Building high-performance web systems and data-intelligence tools that transform raw information into strategic decisions.",
   summary:
-    "Computer Science undergraduate focused on full-stack development, analytics, and machine learning. I enjoy building systems that are useful in the real world, from MERN platforms to predictive dashboards.",
+    "B.Tech CSE undergraduate at Lovely Professional University with a focus on Full-Stack Development (MERN), Data Analytics, and Machine Learning. Experienced in building end-to-end platforms and predictive models.",
   location: "Punjab, India",
   email: "amriteshjangir5@gmail.com",
   phone: "+91 8764251070",
@@ -16,7 +16,7 @@ export const portfolioData = {
   linkedin: "https://www.linkedin.com/in/amriteshjangir/",
   resume: resumeFile,
   image: profileImage,
-  availability: "Open to internships, freelance work, and collaboration.",
+  availability: "Available for Internships & Projects",
 };
 
 export const navItems = [
@@ -29,20 +29,18 @@ export const navItems = [
 ];
 
 export const spotlightStats = [
-  { value: "2", label: "Featured builds" },
-  { value: "4+", label: "Certificates" },
-  { value: "150+", label: "DSA problems solved" },
-  { value: "2027", label: "Graduation target" },
+  { value: "02", label: "Featured Builds" },
+  { value: "05+", label: "Certificates" },
+  { value: "150+", label: "DSA Solutions" },
+  { value: "2027", label: "Graduation" },
 ];
 
 export const skillsData = [
   {
     title: "Programming Languages",
-    description:
-      "Strong fundamentals across development, problem solving, and data work.",
+    description: "Core logic and algorithmic problem-solving capabilities.",
     items: [
-      { name: "C", icon: "devicon:c" },
-      { name: "C++", icon: "devicon:cplusplus" },
+      { name: "C/C++", icon: "devicon:cplusplus" },
       { name: "Java", icon: "devicon:java" },
       { name: "Python", icon: "devicon:python" },
       { name: "SQL", icon: "tabler:sql" },
@@ -50,154 +48,137 @@ export const skillsData = [
     ],
   },
   {
-    title: "Frontend & Web",
-    description:
-      "Interfaces focused on clarity, responsiveness, and practical user flows.",
+    title: "Development Stack",
+    description: "Building modern, scalable, and responsive web applications.",
     items: [
       { name: "React.js", icon: "devicon:react" },
-      { name: "HTML", icon: "devicon:html5" },
-      { name: "CSS", icon: "devicon:css3" },
       { name: "Node.js", icon: "devicon:nodejs" },
       { name: "Express.js", icon: "devicon:express" },
+      { name: "MongoDB", icon: "devicon:mongodb" },
+      { name: "Tailwind CSS", icon: "devicon:tailwindcss" },
     ],
   },
   {
     title: "Data & BI",
-    description:
-      "Tooling for analysis, preprocessing, dashboards, and model experimentation.",
+    description: "Analyzing data patterns and creating interactive dashboards.",
     items: [
       { name: "MySQL", icon: "devicon:mysql" },
-      { name: "SQLite", icon: "devicon:sqlite" },
-      { name: "Excel", icon: "vscode-icons:file-type-excel" },
       { name: "Power BI", icon: "simple-icons:powerbi" },
       { name: "Tableau", icon: "logos:tableau-icon" },
+      { name: "Excel", icon: "vscode-icons:file-type-excel" },
       { name: "Streamlit", icon: "devicon:streamlit" },
     ],
   },
   {
-    title: "Core Strengths",
-    description:
-      "Analytical thinking paired with shipping-oriented execution.",
+    title: "Expertise",
+    description: "Specialized skills in data science and engineering.",
     items: [
-      { name: "Data Analysis", icon: "carbon:data-analytics" },
       { name: "EDA", icon: "carbon:chart-scatter" },
       { name: "Feature Engineering", icon: "carbon:machine-learning-model" },
-      { name: "Model Evaluation", icon: "carbon:chart-evaluation" },
+      { name: "Model Tuning", icon: "carbon:chart-evaluation" },
       { name: "Problem Solving", icon: "carbon:idea" },
-      { name: "Adaptability", icon: "carbon:flow-stream" },
     ],
   },
 ];
 
 export const highlights = [
-  "MERN platforms",
-  "Predictive dashboards",
-  "Data storytelling",
-  "Role-based systems",
-  "Clean UI implementation",
+  "MERN Stack Platforms",
+  "Predictive Analytics",
+  "Data Visualization",
+  "Machine Learning Pipelines",
 ];
 
 export const projects = [
   {
     id: 1,
     title: "Helpify",
-    category: "Home Services Platform",
+    category: "Full-Stack Development",
     period: "Jan 2026 - Feb 2026",
     href: "https://github.com/AmriteshJangir",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200",
     description:
-      "A MERN-based platform built to connect customers with service providers through a structured booking flow.",
+      "A comprehensive MERN-based home services marketplace connecting customers with skilled professionals.",
     bullets: [
-      "Implemented role-based access for customers, providers, and platform workflows.",
-      "Managed the full booking lifecycle including assignment, tracking, completion, and feedback.",
-      "Added authentication, notifications, and dashboards to improve visibility and operations.",
+      "Designed role-based dashboards for Customers, Service Providers, and Admins.",
+      "Implemented a real-time booking lifecycle tracker from assignment to completion.",
+      "Developed secure authentication and automated notification systems for seamless UX.",
     ],
-    stack: ["MongoDB", "MySQL", "Express.js", "React.js", "Node.js"],
+    stack: ["MongoDB", "Express", "React", "Node.js", "MySQL"],
     accent: "from-[#2947a9] via-[#6170ff] to-[#8ed8c0]",
   },
   {
     id: 2,
-    title: "Road Accident Severity Prediction",
-    category: "ML + Analytics Project",
+    title: "Severity Prediction",
+    category: "Data Science & ML",
     period: "Mar 2025 - Apr 2025",
     href: "https://github.com/AmriteshJangir",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee57d5?auto=format&fit=crop&w=1200",
     description:
-      "A classification workflow for predicting accident severity using historical crash data and interactive outputs.",
+      "A machine learning project focused on predicting the severity of road accidents based on historical crash data.",
     bullets: [
-      "Built the pipeline around preprocessing, feature selection, and supervised classification.",
-      "Applied Random Forest with tuning and evaluation to improve predictive quality.",
-      "Deployed Streamlit dashboards for real-time interaction and result interpretation.",
+      "Performed extensive Exploratory Data Analysis (EDA) to identify key accident risk factors.",
+      "Utilized Random Forest Classifier with hyperparameter tuning to achieve high accuracy.",
+      "Built an interactive Streamlit dashboard for real-time severity prediction results.",
     ],
-    stack: ["Python", "Scikit-learn", "Streamlit", "Data Preprocessing"],
+    stack: ["Python", "Scikit-learn", "Pandas", "Streamlit"],
     accent: "from-[#121826] via-[#23507a] to-[#4db7b0]",
   },
 ];
 
 export const learningJourney = [
   {
-    title: "Mastering Data Structures and Algorithms",
+    title: "DSA Mastery",
     org: "Cipher Schools",
-    type: "Training Program",
+    type: "Intensive Training",
     period: "Jun 2025 - Aug 2025",
     details: [
-      "Completed structured training across arrays, linked lists, stacks, queues, trees, graphs, and dynamic programming.",
-      "Improved algorithm design, optimization, and problem-solving consistency through guided practice.",
+      "Mastered complex algorithms and data structures through 150+ solved challenges.",
+      "Focused on time and space complexity optimization for large-scale systems.",
     ],
   },
   {
-    title: "Scientific Computing with Python",
+    title: "Scientific Computing",
     org: "FreeCodeCamp",
-    type: "Certificate",
+    type: "Certification",
     period: "Sep 2025",
+    details: ["Applied Python for data analysis, profiling, and mathematical modeling."],
   },
   {
     title: "Cloud Computing",
-    org: "NPTEL",
-    type: "Certificate",
+    org: "NPTEL (IIT Kharagpur)",
+    type: "Certification",
     period: "Apr 2025",
+    details: ["Explored virtualization, cloud architectures, and distributed computing models."],
   },
   {
-    title: "Code of Duty Hackathon",
-    org: "Hackathon Certificate",
-    type: "Certificate",
+    title: "Hackathon Finalist",
+    org: "Code of Duty",
+    type: "Competition",
     period: "Mar 2024",
-  },
-  {
-    title: "Web Development",
-    org: "FreeCodeCamp",
-    type: "Certificate",
-    period: "Oct 2023",
+    details: ["Collaborated on a rapid-prototyping challenge to build a functional tech solution in 24 hours."],
   },
 ];
 
 export const achievements = [
-  "Solved 150+ problems on LeetCode, GeeksforGeeks, and Salesforce.",
-  "Attended Oracle India Summit.",
-  "Participated in the Bhashini Workshop organized by the Government of India in Jaipur.",
+  "Solved 150+ problems across LeetCode, GFG, and platform specific challenges.",
+  "Invited Attendee at the Oracle India Summit, exploring next-gen database tech.",
+  "Participant in Bhashini Workshop (Govt. of India) for NLP and language tech.",
 ];
 
 export const education = [
   {
     school: "Lovely Professional University",
     place: "Punjab, India",
-    degree: "Bachelor of Technology in Computer Science and Engineering",
-    meta: "CGPA: 6.75",
-    period: "Aug 2023 - Jul 2027",
+    degree: "B.Tech in Computer Science & Engineering",
+    meta: "GPA: 6.75/10",
+    period: "2023 - 2027",
   },
   {
     school: "Ceeri Vidya Mandir",
-    place: "Pilani, India",
-    degree: "Intermediate",
-    meta: "Percentage: 60%",
-    period: "Apr 2021 - Mar 2023",
-  },
-  {
-    school: "Pilani Public School",
-    place: "Pilani, India",
-    degree: "Matriculation",
-    meta: "Percentage: 64%",
-    period: "Jun 2016 - Mar 2021",
+    place: "Pilani, Rajasthan",
+    degree: "Intermediate (Class XII)",
+    meta: "Focus: PCM",
+    period: "2021 - 2023",
   },
 ];
 

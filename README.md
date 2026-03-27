@@ -1,96 +1,73 @@
-# 🌐 3D Awwwards-Level Developer Portfolio
+# 🌌 Amritesh Jangir | Portfolio
 
-### Built with React, GSAP, Three.js, TailwindCSS
+### Data Analyst & Full-Stack Developer
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer](https://img.shields.io/badge/Framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-This is a fully animated, interactive, 3D developer portfolio designed to **impress clients, recruiters, and hiring managers**. It's more than a portfolio—it's a web experience built with production-level code, scroll-based animations, and real-world best practices.
-
-> ⚡ Inspired by Awwwards-level sites — built with React (Vite), TailwindCSS, GSAP, React Three Fiber, and Drei.
-
-<br/>
-<div>
-  <img src="https://github.com/user-attachments/assets/4eaf9399-fd02-4a90-83f7-2b5a361bc032" alt="Hero" style="border-radius: 8px;"/>
-  <div style="display: flex; justify-content: space-between; margin: 20px 0;">
-    <img src="https://github.com/user-attachments/assets/155bf742-b24f-4119-89f4-87e6d88c8f53" alt="Works" style="width: 32%; border-radius: 8px;"/>
-    <img src="https://github.com/user-attachments/assets/f22b9749-85ed-434f-a5f6-df1f8e221103" alt="ContactSummary" style="width: 32%; border-radius: 8px;"/>
-    <img src="https://github.com/user-attachments/assets/3e473322-b96a-433b-aec5-ece9bab25795" alt="Contact" style="width: 32%; border-radius: 8px;"/>
-  </div>
-</div>
-<br/>
-
-> 📺 [Watch Full YouTube Walkthrough](https://youtu.be/i0229UsdBwc)
----
-
-## 🚀 Tech Stack
-
-| Technology       | Description                             |
-| ---------------- | --------------------------------------- |
-| **React (Vite)** | Fast dev server and production bundling |
-| **Tailwind CSS** | Utility-first styling for components    |
-| **GSAP**         | Scroll-based animation and motion logic |
-| **Three.js**     | 3D scenes powered by React Three Fiber  |
-| **Drei**         | Useful helpers for 3D rendering         |
+A premium, immersive, and high-performance developer portfolio designed with an Awwwards-style aesthetic. This project showcases a blend of advanced web engineering and data-driven insights.
 
 ---
 
-## 📁 Features
+## ✨ Features
 
-- 🔥 3D Hero Section with animated planet and golden ring
-- 🧩 Smooth slide-in Navbar with staggered link animations
-- 🎯 Scroll-triggered Service Summary with horizontal word motion
-- 🖼️ Works section with hover overlays and interactive previews
-- ✍️ About section with clip-path image reveal + typewriter text
-- 🏁 Marquee-based Contact Summary and CTA
-- 💼 Fully responsive and accessible on all screen sizes
+- 🌑 **Premium Dark Theme**: Sleek background with animated mesh gradients and glassmorphism.
+- 🚀 **Buttery Smooth Scroll**: Powered by Lenis for a high-end browsing experience.
+- 🎭 **Advanced Animations**: Staggered reveals and magnetic interactions using Framer Motion.
+- 📊 **Data Integration**: Showcasing complex projects with a focus on analytics and full-stack architecture.
+- 📱 **Fully Responsive**: Optimized for all devices, from desktop to mobile.
 
 ---
 
-## 📦 Setup & Installation
+## 🛠️ Project Structure
 
 ```bash
-git clone https://github.com/Ali-Sanati/awwwards-portfolio.git
-cd awwwards-portfolio
-npm install
-npm run dev
+├── 📁 src
+│   ├── 📁 components    # Reusable UI elements
+│   ├── 📁 sections      # Page sections (Hero, About, Projects, etc.)
+│   ├── 📁 constants     # Portfolio data and configuration
+│   └── 📁 assets        # Profile images and resume
 ```
 
-> Open http://localhost:5173 in your browser.
+---
+
+## 🚀 Quick Start
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Raviranjan010/Amritesh_portfolio.git
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
 ---
 
-## 🛠️ Customization Tips
+## 👨‍💻 About Amritesh
 
-- Change text, images, and links in /constants/index.js
+I am a Computer Science undergraduate focused on building practical web products and data-driven tools. My expertise lies in bridging the gap between raw data and usable decisions through the MERN stack and predictive analytics.
 
-- Update 3D models and scene in Hero.jsx
-
-- Add your own contact info in Contact.jsx
-
-- Adjust colors, fonts, and layout via tailwind.config.js
+- **Current Focus**: B.Tech CSE @ LPU (2023 - 2027)
+- **Key Projects**: Helpify (MERN), Accident Severity Prediction (ML)
+- **Skills**: C++, Java, Python, React, MySQL, Power BI
 
 ---
 
-## 🔗 Assets
+## 📬 Connectivity
 
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
-
----
-
-## 📣 Like the project?
-
-If this helped you build or inspire your own site:
-
-- ⭐ Star this repo
-
-- 📺 [Watch the full walkthrough on YouTube](https://youtu.be/i0229UsdBwc)
-
-- 📬 [Connect on LinkedIn](https://www.linkedin.com/in/ali-sanati)
-
-- 📷 [Follow me on Instagram](https://www.instagram.com/ali.sanatidev/reels/)
+- **LinkedIn**: [amriteshjangir](https://www.linkedin.com/in/amriteshjangir/)
+- **GitHub**: [AmriteshJangir](https://github.com/AmriteshJangir)
+- **Email**: [amriteshjangir5@gmail.com](mailto:amriteshjangir5@gmail.com)
 
 ---
 
-## 🤝 Let’s Build Together
-
-Drop a comment on the video or open an issue with your idea!
-
-> 📩 Like, subscribe, and let me know what kind of project you want to build together!
+> [!TIP]
+> This portfolio is ready to be deployed on **Vercel** with zero configuration!

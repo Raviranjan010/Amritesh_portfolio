@@ -11,28 +11,10 @@
 
 @font-face {
   font-family: "Amiamie";
-  src: url("/fonts/amiamie/otf/Amiamie-Italic.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amiamie";
-  src: url("/fonts/amiamie/otf/Amiamie-Light.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-Light.ttf") format("truetype");
-  font-weight: 300;
+  src: url("/fonts/amiamie/otf/Amiamie-Bold.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amiamie";
-  src: url("/fonts/amiamie/otf/Amiamie-LightItalic.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -45,76 +27,123 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Amiamie";
-  src: url("/fonts/amiamie/otf/Amiamie-BlackItalic.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amiamie-Round";
-  src: url("/fonts/amiamie/otf/Amiamie-RegularRound.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-RegularRound.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amiamie-Round";
-  src: url("/fonts/amiamie/otf/Amiamie-BlackRound.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-BlackRound.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Amiamie-Round";
-  src: url("/fonts/amiamie/otf/Amiamie-BlackItalicRound.otf") format("opentype"),
-    url("/fonts/amiamie/ttf/Amiamie-BlackItalicRound.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
 @theme {
-  --color-primary: #f3f6fb;
-  --color-DarkLava: #08111f;
-  --color-SageGray: #64748b;
-  --color-gold: #4f69ff;
-  --font-amiamie: "Amiamie", sans-serif;
-  --font-amiamie-round: "Amiamie-Round", sans-serif;
-
+  --color-primary: #0a0c10;
+  --color-accent: #4f69ff;
+  --color-gold: #ffd700;
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  
+  --font-main: "Amiamie", "Inter", sans-serif;
+  
   --animate-marquee: marquee 40s infinite linear;
   @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - var(--gap)));
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+
+  --animate-pulse-slow: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
   }
 }
 
+:root {
+  --bg-color: #050608;
+  --text-color: #e2e8f0;
+}
+
 body {
-  background:
-    radial-gradient(circle at top left, rgba(93, 121, 255, 0.16), transparent 28%),
-    radial-gradient(circle at 85% 12%, rgba(132, 255, 213, 0.14), transparent 24%),
-    linear-gradient(180deg, #f8fbff 0%, #eef3fb 100%);
-  color: #08111f;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
   overflow-x: hidden;
-  font-family: var(--font-amiamie);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
   cursor: none;
 }
 
 @media (pointer: coarse) {
-  body {
-    cursor: auto;
-  }
+  body { cursor: auto; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f69ff;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Mesh Gradient Background */
+.mesh-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(at 0% 0%, rgba(79, 105, 255, 0.15) 0, transparent 50%),
+              radial-gradient(at 100% 0%, rgba(255, 215, 0, 0.05) 0, transparent 50%),
+              radial-gradient(at 100% 100%, rgba(79, 105, 255, 0.1) 0, transparent 50%),
+              radial-gradient(at 0% 100%, rgba(132, 255, 213, 0.05) 0, transparent 50%);
+  filter: blur(80px);
+}
+
+/* Typography Utilities */
+@utility h1-xl {
+  @apply text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9];
+}
+
+@utility text-gradient {
+  background: linear-gradient(to right, #4f69ff, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Utilities */
+@utility banner-text-responsive {
+  @apply text-[58px] sm:text-[88px] md:text-[112px] lg:text-[148px] leading-[0.88];
+}
+
+@utility contact-text-responsive {
+  @apply text-[34px] sm:text-[52px] md:text-[62px] lg:text-[100px] leading-[1.15];
+}
+
+.hero-grid::before {
+  content: "";
+  position: absolute;
+  inset: 8% -4% auto auto;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(79, 105, 255, 0.3) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  animation: pulse-slow 10s infinite;
 }
 
 a, button, input, textarea, select, [role="button"] {
@@ -125,48 +154,4 @@ a, button, input, textarea, select, [role="button"] {
   a, button, input, textarea, select, [role="button"] {
     cursor: auto !important;
   }
-}
-
-#root {
-  min-height: 100vh;
-}
-
-@utility clip-path {
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-}
-
-@utility banner-text-responsive {
-  @apply text-[58px] sm:text-[88px] md:text-[112px] lg:text-[148px] leading-[0.88];
-}
-
-@utility value-text-responsive {
-  @apply text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px];
-}
-
-@utility marquee-text-responsive {
-  @apply text-[24px] sm:text-[32px] lg:text-[38px];
-}
-
-@utility contact-text-responsive {
-  @apply text-[34px] sm:text-[52px] md:text-[62px] lg:text-[100px] leading-[1.15];
-}
-
-.hero-grid {
-  position: relative;
-}
-
-.hero-grid::before {
-  content: "";
-  position: absolute;
-  inset: 8% -4% auto auto;
-  width: 22rem;
-  height: 22rem;
-  border-radius: 999px;
-  background: radial-gradient(
-    circle,
-    rgba(79, 105, 255, 0.2) 0%,
-    rgba(79, 105, 255, 0) 70%
-  );
-  filter: blur(18px);
-  pointer-events: none;
 }
