@@ -1,0 +1,30 @@
+﻿
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\components\CustomCursor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\components\MagneticButton.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\components\Preloader.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\components\RevealText.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\sections\About.jsx
+  4:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\sections\Contact.jsx
+  4:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\sections\Hero.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\sections\Services.jsx
+  5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Project+\Portfolios\AWWWARDS-Standard_Portfolio-Website-main\src\sections\Works.jsx
+  5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Γ£û 9 problems (9 errors, 0 warnings)
+

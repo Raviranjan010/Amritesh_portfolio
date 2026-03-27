@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Regular.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Italic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Light.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-LightItalic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Black.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackItalic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-RegularRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-RegularRound.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackRound.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackItalicRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackItalicRound.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #f3f6fb;
+  --color-DarkLava: #08111f;
+  --color-SageGray: #64748b;
+  --color-gold: #4f69ff;
+  --font-amiamie: "Amiamie", sans-serif;
+  --font-amiamie-round: "Amiamie-Round", sans-serif;
+
+  --animate-marquee: marquee 40s infinite linear;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(93, 121, 255, 0.16), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(132, 255, 213, 0.14), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, #eef3fb 100%);
+  color: #08111f;
+  overflow-x: hidden;
+  font-family: var(--font-amiamie);
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+a, button, input, textarea, select, [role="button"] {
+  cursor: none !important;
+}
+
+@media (pointer: coarse) {
+  a, button, input, textarea, select, [role="button"] {
+    cursor: auto !important;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@utility clip-path {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+@utility banner-text-responsive {
+  @apply text-[58px] sm:text-[88px] md:text-[112px] lg:text-[148px] leading-[0.88];
+}
+
+@utility value-text-responsive {
+  @apply text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px];
+}
+
+@utility marquee-text-responsive {
+  @apply text-[24px] sm:text-[32px] lg:text-[38px];
+}
+
+@utility contact-text-responsive {
+  @apply text-[34px] sm:text-[52px] md:text-[62px] lg:text-[100px] leading-[1.15];
+}
+
+.hero-grid {
+  position: relative;
+}
+
+.hero-grid::before {
+  content: "";
+  position: absolute;
+  inset: 8% -4% auto auto;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(79, 105, 255, 0.2) 0%,
+    rgba(79, 105, 255, 0) 70%
+  );
+  filter: blur(18px);
+  pointer-events: none;
+}
