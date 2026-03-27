@@ -95,7 +95,6 @@ const App = () => {
           />
         </div>
 
-        <div className="mesh-bg" />
         <div className="relative">
           <Navbar />
           <Hero />
